@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:defaultValue="1"
+        android:entries="@array/array_list_mac"
+        android:entryValues="@array/array_list_mac_values"
+        android:key="listpref_mac_add"
+        android:summary="Choose the mac address"
+        android:title="MAC address" />
+    <EditTextPreference
+        android:name="Value A"
+        android:inputType="numberDecimal|numberSigned"
+        android:key="pref_value_a"
+        android:title="Set system noise parameter a" />
+    <EditTextPreference
+        android:name="Value B"
+        android:inputType="numberDecimal|numberSigned"
+        android:key="pref_value_b"
+        android:title="Set system noise parameter b" />
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="switch_continuous_scan_on_off"
+        android:title="Continuous scanning" />
+    <EditTextPreference
+        android:name="Scan Time"
+        android:inputType="numberDecimal|numberSigned"
+        android:key="pref_value_scan_time"
+        android:title="Set scan time" />
+    <EditTextPreference
+        android:name="Stop Time"
+        android:inputType="numberDecimal|numberSigned"
+        android:key="pref_value_stop_time"
+        android:title="Set stop time" />
+
+</PreferenceScreen>
